@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(235, 229, 229);
+}
+
+#container {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+#header {
+    height: 400px;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#header h2 {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin: 45px 0;
+}
+
+#time {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 90px;
+    /* display: none; */
+}
+
+#time h2 {
+    color: #e2e2e2;
+    font-size: 35px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#time h2:hover{
+    color: greenyellow;
+}
+
+#time h2:first-child {
+    letter-spacing: 2px;
+}
+
+#time h3 {
+    color: red;
+    font-size: 120px;
+    line-height: 70px;
+}
+
+#textarea {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 336px;
+}
+
+#typingText,
+#userInput {
+    height: 350px;
+    width: 100%;
+    font-size: 25px;
+    color: #35393c;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    position: absolute;
+    top: 42px;
+    padding: 40px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#userInput {
+    top: 350px;
+    color: white;
+    background: rgb(20, 20, 20);
+}
+
+#userInput::placeholder {
+    color: white;
+}
+
+#result {
+    height: 200px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    display: none;
+}
+
+#result .showResult {
+    height: 200px;
+    width: 250px;
+    display: grid;
+    place-items: center;
+    margin: 70px 120px;
+}
+
+#result .showResult h2 {
+    font-size: 40px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #e2e2e2;
+}
+
+#result .showResult h1 {
+    color: white;
+    line-height: 50px;
+    font-size: 60px;
+}
+
+/* Correct Class For Correct Characters */
+.correct {
+    color: #83aa0e;
+}
+
+/* Incorrect Class For Incorrect Characters */
+.incorrect {
+    color: #dc1414;
+}
+
+
+/* Inphynity logo */
+.left {
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    display: inline-block;
+}
+
+.left img {
+    width: 230px;
+}
+
+.link {
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/** ============social link ============**/
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
